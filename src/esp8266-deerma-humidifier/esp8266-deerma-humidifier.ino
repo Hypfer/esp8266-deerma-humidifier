@@ -356,6 +356,7 @@ void publishAutoConfig() {
   autoconfPayload["name"] = identifier + String(" WiFi");
   autoconfPayload["value_template"] = "{{value_json.wifi.rssi}}";
   autoconfPayload["unique_id"] = identifier + String("_wifi");
+  autoconfPayload["unit_of_measurement"] = "dBm";
   autoconfPayload["json_attributes_topic"] = MQTT_TOPIC_STATE;
   autoconfPayload["json_attributes_template"] = "{\"ssid\": \"{{value_json.wifi.ssid}}\", \"ip\": \"{{value_json.wifi.ip}}\"}";
   autoconfPayload["icon"] = "mdi:wifi";
