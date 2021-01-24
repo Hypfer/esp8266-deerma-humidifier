@@ -1,4 +1,7 @@
-# esp8266-deerma-humidifier
+<div align="center">
+    <img src="https://github.com/Hypfer/esp8266-deerma-humidifier/blob/master/img/logo.svg" width="800" alt="esp8266-deerma-humidifier">
+    <p align="center"><h2>Free your humidifier from the cloud</h2></p>
+</div>
 
 This is a custom firmware for the ESP8285-based Wi-Fi module of the Xiaomi Mi Smart Antibacterial Humidifier,
 which replaces cloud connectivity with local mqtt controls. Some disassembly and soldering required.
