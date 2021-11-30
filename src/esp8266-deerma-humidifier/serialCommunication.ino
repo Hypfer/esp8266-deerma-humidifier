@@ -214,6 +214,13 @@ void setHumiditySetpoint(uint8_t setpointValue) {
   char humiditySetpointMsg[40];
   memset(humiditySetpointMsg, 0, sizeof(humiditySetpointMsg));
 
+  if (setpointValue < 0) {
+    setpointValue = 0;
+  } else if (setpointValue > 99) {
+    setpointValue = 99;
+  }
+
+
   snprintf(humiditySetpointMsg, sizeof(humiditySetpointMsg), "Set_HumiValue %d", setpointValue);
 
   queueDownstreamMessage(humiditySetpointMsg);

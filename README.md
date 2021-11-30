@@ -9,7 +9,7 @@ which replaces cloud connectivity with local mqtt controls. Some disassembly and
 The internal Mi Model ID of the supported device is `deerma.humidifier.jsq`.
 The Model on the packaging being `ZNJSQ01DEM`.
 
-Home Assistant Autodiscovery is supported, albeit not including the humidifier part, since there's no `humidifier.mqtt` integration yet.
+Home Assistant Autodiscovery for all features is supported and requires Home Assistant >= 2021.11.
 The WifiManager library is used for on-the-fly configuration. You can even press and hold the wifi button on the device to restart the configuration.
 Also, ArduinoOTA is used, so that firmware updates are possible even with a reassembled device.
 
